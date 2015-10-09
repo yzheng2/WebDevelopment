@@ -1,0 +1,77 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style type="text/css">
+body{background:white;}
+h1{font:Georgia, "Times New Roman", Times, serif; background:#3CF}
+</style>
+<title>Survey Page</title>
+</head>
+<body>
+<h1>Favorite Team</h1>
+<hr>
+<h2>Basic Information</h2><br>
+<form name="surveyform" action="result.html" method="post">
+User Name:
+<input type="text" name="username"><br>
+
+Gender:<br>
+&nbsp;&nbsp;&nbsp;Male<input type="radio" name="gender" value="Male">
+&nbsp;&nbsp;&nbsp;Female<input type="radio" name="gender" value="Female">
+<br>
+Age:<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="age" value="less than 20">&lt;20<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="age" value="20-35">20-35<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="age" value="35-50">35-50<br>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="age" value="larger than 50">50&lt;<br>
+
+<h2>Choose Your Favorite Team</h2>
+<input type="radio" name="team" value="Celtics">Celtics<br>
+<input type="radio" name="team" value="Mavericks">Mavericks<br>
+<input type="radio" name="team" value="Nets">Nets<br>
+<input type="radio" name="team" value="Rockets">Rockets<br>
+<input type="radio" name="team" value="Knicks">Knicks<br>
+<input type="radio" name="team" value="Grizzlies">Grizzlies<br>
+<input type="radio" name="team" value="76ers">76ers<br>
+<input type="radio" name="team" value="Pelicans">Pelicans<br>
+<input type="radio" name="team" value="Raptors">Raptors<br>
+<input type="radio" name="team" value="Spurs">Spurs<br>
+<input type="radio" name="team" value="Bulls">Bulls<br>
+<input type="radio" name="team" value="Nuggets">Nuggets<br>
+<input type="radio" name="team" value="Cavaliers">BCavaliers<br>
+<input type="radio" name="team" value="Timberwolves">Timberwolves<br>
+<input type="radio" name="team" value="Pistons">Pistons<br>
+<input type="radio" name="team" value="Thunder">Thunder<br>
+<input type="radio" name="team" value="Pacers">Pacers<br>
+<input type="radio" name="team" value="Trail Blazers">Trail Blazers<br>
+<input type="radio" name="team" value="Bucks">Bucks<br>
+<input type="radio" name="team" value="Jazz">Jazz<br>
+<input type="radio" name="team" value="Hawks">Hawks<br>
+<input type="radio" name="team" value="Warriors">Warriors<br>
+<input type="radio" name="team" value="Hornets">Hornets<br>
+<input type="radio" name="team" value="Clippers">Clippers<br>
+<input type="radio" name="team" value="Heat">Heat<br>
+<input type="radio" name="team" value="Lakers">Lakers<br>
+<input type="radio" name="team" value="Magic">Magic<br>
+<input type="radio" name="team" value="Suns">Suns<br>
+<input type="radio" name="team" value="Wizards">Wizards<br>
+<input type="radio" name="team" value="Kings">Kings<br>
+
+<h2>Reasons</h2>
+<input type="checkbox" name="reason" value="stars">Super Stars<br>
+<input type="checkbox" name="reason" value="rank">High Rank<br>
+<input type="checkbox" name="reason" value="way">Way to play<br>
+<input type="checkbox" name="reason" value="brand">Cool Brands<br>
+<input type="checkbox" name="reason" value="coach">Coach<br>
+<input type="checkbox" name="reason" value="history">Team History<br>
+<input type="checkbox" name="reason" value="uniform">Team Uniform<br>
+<input type="checkbox" name="reason" value="like">Just like it!<br>
+others:<input type="text" name="other reasons"><br><br>
+
+<input type="submit" value="submit"><input type="reset" value="reset">
+
+</form>
+</body>
+</html>

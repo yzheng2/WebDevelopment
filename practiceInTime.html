@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+var HL = window.history.length;
+document.write(HL);
+//window.history.back();
+var num1=0 ;
+function number1()
+{
+	num1 = num1+1;
+	document.getElementById('num1').value=num1;
+}
+var i=setInterval("number1()",1000);
+var j;
+function number2()
+{
+	num1=num1+1;
+	document.getElementById("num2").value=num1;
+	j=setTimeout("number2()",1000);
+}
+</script>
+<title>Time in Javascript</title>
+</head>
+
+<body>
+<form>
+<p>Type in start number</p><br />
+<input type="button" value="start" onclick="number1()" />
+<input type="text" id="num1" />
+<input type="button" value="Stop" onclick="clearInterval(i)" /><br />
+<input type="button" value="restart" onclick="number2()" />
+<input type="text" id="num2" />
+<input type="button" value="Stop2" onclick="clearTimeout(j)" />
+</form>
+
+<br />
+<a href="http://www.baidu.com">First #</a>
+<a name="target1"></a>
+<a href="http://www.google.com">Second #</a>
+<a name="target2"></a><br />
+<form>
+<input type="button" value="return last page" onclick="history.back()" />
+
+</body>
+</html>

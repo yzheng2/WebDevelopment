@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+document.write(window.history.length);
+function goback()
+{
+	history.back();
+}
+</script>
+<title>浏览器对象</title>
+</head>
+
+<body>
+<h1>操作成功</h1><br />
+<strong id="timer">t</strong>
+
+<script type="text/javascript">
+var num=5;
+function count()
+{
+	var x=document.getElementById("timer");
+	x.innerHTML=num;
+	num=num-1;
+	if(num<0)
+	{
+		window.location.href="http://www.google.com";
+	}
+	setTimeout("count()",1000);
+}
+count();
+</script>
+秒后回到主页<a href="javascript:goback()">返回</a>
+</body>
+</html>
